@@ -1,5 +1,8 @@
 // Widget tests for Voice App (Kokoro TTS demo).
-// Tests avoid triggering real TTS (no network/native) by only exercising UI and validation.
+//
+// Covers: UI presence, default content, empty-text validation, Play disabled state,
+// voice dropdown options, voice selection, and Generate loading state (one frame only).
+// Tests avoid full TTS runs (no network or native inference) so they stay fast and hermetic.
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
