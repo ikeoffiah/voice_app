@@ -202,7 +202,7 @@ class _VoicePageState extends State<VoicePage> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
-              value: _selectedVoice,
+              initialValue: _selectedVoice,
               decoration: const InputDecoration(
                 labelText: 'Voice',
                 border: OutlineInputBorder(),

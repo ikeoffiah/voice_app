@@ -44,9 +44,9 @@ void main() {
     final playButton = find.byWidgetPredicate(
       (Widget w) =>
           w is FilledButton &&
-          (w as FilledButton).onPressed == null &&
-          (w as FilledButton).child is Text &&
-          ((w as FilledButton).child as Text).data == 'Play',
+          (w).onPressed == null &&
+          (w).child is Text &&
+          ((w).child as Text).data == 'Play',
     );
     expect(playButton, findsOneWidget);
   });
